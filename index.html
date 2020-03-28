@@ -7,25 +7,57 @@
   </head>
   <body>
     <div class="centratura">
-      <div class="flex-item">
-        <h1 id="titolo">Calcola il testo del tuo biglietto</h1>
+      <!-- <div class="flex-item"> -->
+        <h1 id="titolo">Calcola il costo del tuo biglietto</h1>
         <div class="form-div">
-          <div class="form-item-1"
-            <label for="name">Nome e Cognome</label><br>
-            <input type="text" name="name" id="name" size="30"><br>
-            <label for="km">Kilometri da percorrere</label><br>
-            <input type="number" name="km" id="km"><br>
-            <label for="age">Seleziona il range di età</label><br>
-            <select id="age" name="age">
-              <option value="under">Meno di 18 anni</option>
-              <option value="adult">Adulto - 18+</option>
-              <option value="over">Più di 65 anni</option>
-            </select>
+          <div class="form-item-1">
+            <div>
+              <label for="name">Nome e Cognome</label><br>
+              <input type="text" name="name" id="name" size="30"><br>
 
-
+              <input type="radio" name="gender" value="male">
+              <label for="male">Maschio</label>
+              <input type="radio" name="gender" value="female">
+              <label for="female">Femmina</label><br>
+            </div>
+            <div>
+              <label for="km">Kilometri da percorrere</label><br>
+              <input type="number" name="km" id="km"><br>
+            </div>
+            <div>
+              <label for="age">Seleziona il range di età</label><br>
+              <select id="age" name="age">
+                <option value="under">Meno di 18 anni</option>
+                <option value="adult">Adulto - 18+</option>
+                <option value="over">Più di 65 anni</option>
+              </select>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit" name="calcola" id="calcola">Calcola il biglietto</button>
+            <button type="reset" name="reset" id="reset">Reset</button>
+          </div>
+          <div class="logo">
+            <img src="css/logo-2.png" alt="">
           </div>
         </div>
-      </div>
+
+        <h2 id="ticket-title">Biglietto Generato</h2>
+        <div class="ticket-box">
+          <table>
+            <caption>I dati del tuo biglietto</caption>
+            <thead>
+              <td>Nome passeggero</td>
+              <td>Num.Ref</td>
+              <td>Tariffa</td>
+              <td>Costo totale</td>
+            </thead>
+            <tr id="dati-biglietto">
+
+            </tr>
+          </table>
+        </div>
+
     </div>
   </body>
 </html>
