@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url(css/background.jpg);
+  background-image: url(background.jpg);
   padding: 50px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, sans-serif;
   height: 100vh;
@@ -28,7 +28,7 @@ img{
 #titolo{
   text-transform: uppercase;
   font-size: 2em;
-  color: #fff;
+  color: #800000;
   text-align: center;
   font-weight: bold;
 }
@@ -42,6 +42,9 @@ img{
   justify-content: space-around;
   padding: 20px 0 0 20px;
   margin-bottom: 20px;
+  border: 3px solid red;
+  box-shadow: 5px 8px 4px 5px #001146;
+  border-radius: 20px;
 }
 .form-item-1{
   width: 40%;
@@ -104,9 +107,29 @@ input[name="name"]:focus{
   display: flex;
   justify-content: space-between;
   padding: 20px 20px 0 20px;
+  opacity: 0;
+  transition: 0.5s ease-in;
 }
+
 
 table{
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid red;
+  line-height: 40px;
+}
+
+table caption{
+  font-size: 30px;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+thead td{
+font-size: 20px;
+color: #000;
+font-weight: bold;
+}
+
+#dati-biglietto td{
+  text-transform: capitalize;
 }
